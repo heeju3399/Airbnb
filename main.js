@@ -12,16 +12,16 @@ window.onclick ==
     }
   };
 
-var signup2 = document.getElementById("signup2");
+var signup = document.getElementById("signup");
 function openSignup() {
-  signup2.style.display = "block";
+  signup.style.display = "block";
 }
 function closeSignup() {
-  signup2.style.display = "none";
+  signup.style.display = "none";
 }
 window.onclick ==
   function(event) {
-    if (event.target == signup2) {
-      signup2.style.display = "none";
+    if (event.target == signup) {
+      signup.style.display = "none";
     }
   };
