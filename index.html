@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>에어비엔비</title>
   <link rel="stylesheet" href="main.css" />
-  <link rel="shortcut icon" href="../Airbnb/img/facebook.svg" type="image/x-icon">
-  
+  <link rel="shortcut icon" href="" type="image/x-icon">
+
 </head>
 
 <body>
   <header id="main-page" class="main-page">
     <nav class="main-navi">
       <div class="logo">
-        <img src="../Airbnb이희주/img/airbnb.svg" width="18px" />
+        <img src="img/airbnb.svg" width="18px" />
       </div>
-      
+
       <div class="item">
         <a href="#">회원가입</a>
       </div>
@@ -28,12 +28,12 @@
       </div>
       <div class="item">
         <a onclick="openSignup();" style="width: auto;" class="btnlogin"> 회원가입
-        </a> 
+        </a>
       </div>
       <div class="item">
-          <a onclick="openLogin();" style="width: auto;" class="btnlogin"> 로그인
-          </a> 
-        
+        <a onclick="openLogin();" style="width: auto;" class="btnlogin"> 로그인
+        </a>
+
       </div>
     </nav>
 
@@ -70,7 +70,7 @@
           <button type="button" class="perbtn" aria-haspopup="true" aria-expanded="false" aria-placeholder="인원">
             <div class="person1">인원</div>
             <div class="person2-pic">
-              <img src="../Airbnb이희주/img/trialgle.svg" alt="tri" width="20px" />
+              <img src="img/trialgle.svg" alt="tri" width="20px" />
             </div>
           </button>
         </div>
@@ -81,79 +81,60 @@
     </div>
     <!-- 코로나19사태이훙~  코로나19사태이훙~  코로나19사태이훙~  코로나19사태이훙~  코로나19사태이훙~  코로나19사태이훙~  코로나19사태이훙~  코로나19사태이훙~ -->
     <div class="bottom-text">
-      <h3>코로나 19사태에 대한 에어비앤비의 대응</h3>
+      <span class="h3say">코로나 19사태에 대한 에어비앤비의 대응</span> <br>
       <p>
         에어비엔비는 코로나대응 최우선적으로 하고있으며 수수료 없는 취소욥션을
-        제공하고있습니다. <br />
+        제공하고있습니다. <br>
       </p>
       <a class="bottom-text-a"
         href="https://www.airbnb.co.kr/help/article/2701/%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4%EA%B0%90%EC%97%BC%EC%A6%9D19%EC%BD%94%EB%A1%9C%EB%82%9819-%EA%B4%80%EB%A0%A8-%EC%A0%95%EC%83%81%EC%B0%B8%EC%9E%91%EC%9D%B4-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%83%81%ED%99%A9-%EC%A0%95%EC%B1%85">자세히
         알아보기</a>
     </div>
     <!-- ===================로그인============== -->
-    <div id="login" class="modal">
+    <div id="login" class="modal_log">
       <form class="modal-content">
-        <div class="container">
-          <span onclick="closeLogin();" class="close"> &times; </span>
+        <div class="container_log">
+          <span onclick="closeLogin();" class="closelog"> &times; </span>
           <div class="loginformmaintxt">
-          <h3>로그인</h3>
-          <p>아이디와 비밀번호를 입력해 주세요.</p>
-        </div>
-          <hr />
 
-          <input type="text" class="text_input" placeholder="Enter ID">
+            <input type="text" class="text_input" placeholder="Enter ID">
+            <input type="text" class="text_input" placeholder="Enter Password" />
+            <label>
+              <input type="checkbox" checked="checked" style="margin-bottom: 15px" />자동로그인
+            </label>
+            <div>
+              <button type="submit" class="loginbutton">로그인</button>
+            </div>
+          </div>
+      </form>
+    </div>
 
-          <input type="text" class="text_input" placeholder="Enter Password" />
+    <!-- =======================회원가입==================== -->
 
+    <div id="signup2" class="modal_signup">
+      <form class="modal-content_signup">
+        <div class="container_">
 
-          <label>
-            <input
-              type="checkbox"
-              checked="checked"
-              style="margin-bottom: 15px"
-            />자동로그인
-          </label>
-          <div>
-            <button type="submit" class="loginbutton">로그인</button>
+          <span onclick="closeSignup();" class="closesign"> &times; </span>
+
+          <div class="Signup_Btn">
+
+            <div class="Signup_Btn_Facebook">
+              <img src="img/facebookwhite.svg" width="20px" height="20px" alt=""> 페이스북 계정으로 회원가입
+            </div>
+            <div class="Signup_Btn_Google">
+              <img src="img/google.svg" width="20px" height="20px" alt=""> 구글 계정으로 회원가입
+            </div>
+            <hr>
+            <div class="Signup_Btn_Email">
+              <img src="img/sectionpic/Email.svg" alt="" width="20px" height="20px"> 이메일로 회원가입
+            </div>
+            <hr>
+            <span class="abcb">이미 에어비앤비 계정이 있나요? <a href="" class="loginppp"> 로그인</a></span>
           </div>
         </div>
       </form>
     </div>
-<!-- =======================회원가입==================== -->
-<div id="signup" class="modal">
-  <form class="modal-content">
-    <div class="container_Signup">
-      
-
-      <span onclick="closeSignup();" class="close"> &times; </span>
-      
-     <div class="Signup_Btn"> 
-      <div class="Signup_Btn_Facebook">
-        <img src="../Airbnb이희주/img/facebook.svg"  width="15px" height="15px" alt=""> 페이스북계정으로 로그인
-      </div>
-      <div class="Signup_Btn_Google">
-        <img src="../Airbnb이희주/img/google.svg" width="15px" height="15px" alt=""> 구글 계정으로 로그인
-      </div>
-      <hr>
-      <div class="Signup_Btn_Email">
-        <img src="../Airbnb이희주/img/sectionpic/Email.svg" alt="" width="15px" height="15px" > 이메일로 로그인
-      </div>
-      <hr>
-      <span>이미 에어비앤비 계정이 있나요?  <a href="">로그인</a></span>
-    </div>
-      <label>
-        <input
-          type="checkbox"
-          checked="checked"
-          style="margin-bottom: 15px"
-        />자동로그인
-      </label>
-      <div>
-        <button type="submit" class="loginbutton">로그인</button>
-      </div>
-    </div>
-  </form>
-</div>
 
   </header>
 
@@ -165,13 +146,13 @@
         <div class="wrapper">
           <div class="home">
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/bad.webp" width="600px" height="400px" />
+              <img src="img/sectionpic/1/bad.webp" width="600px" height="400px" />
             </div>
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/체험.webp" width="600px" height="400px" />
+              <img src="img/sectionpic/1/체험.webp" width="600px" height="400px" />
             </div>
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/어드벤처.webp" width="600px" height="400px" />
+              <img src="img/sectionpic/1/어드벤처.webp" width="600px" height="400px" />
             </div>
 
             <div class="home-text">숙소</div>
@@ -186,7 +167,7 @@
             <h3>퀄리티와 인테리어가 진행하는 2일 이상의 여행 액티비티, 식사, 숙박포함.
 
               <div class="bbb">
-                <img src="../Airbnb이희주/img/sectionpic/1/look.jpg" alt="" width="80%">
+                <img src="img/sectionpic/1/look.jpg" alt="" width="80%">
               </div>
           </div>
           <!-- ============================ -->
@@ -194,86 +175,86 @@
           <h3>현지 전문가가 진행하는 2일 이상의 여행 - 액티비티, 식사, 숙박 포함.</h3><br>
           <div class="introduction">
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/2/1.webp" width="300px" height="333px" />
+              <img src="img/sectionpic/1/2/1.webp" width="300px" height="333px" />
             </div>
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/2/2.webp" width="300px" height="333px" />
+              <img src="img/sectionpic/1/2/2.webp" width="300px" height="333px" />
             </div>
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/2/3.webp" width="300px" height="333px" />
+              <img src="img/sectionpic/1/2/3.webp" width="300px" height="333px" />
             </div>
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/2/4.webp" width="300px" height="333px" />
+              <img src="img/sectionpic/1/2/4.webp" width="300px" height="333px" />
             </div>
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/2/5.jpeg" width="300px" height="333px" />
+              <img src="img/sectionpic/1/2/5.jpeg" width="300px" height="333px" />
             </div>
 
             <div>
-              <img src="../Airbnb이희주/img/sectionpic/1/2/6.webp" width="300px" height="333px" />
+              <img src="img/sectionpic/1/2/6.webp" width="300px" height="333px" />
             </div>
 
             <div class="home-text">에콰도르
               <p>4day Galepagos Isiland Hopping budget <br> 1인당 \1,716,626부터 4일</p>
             </div>
             <div class="home-text">노르웨이
-              <p>올 인클루시브 패키지 2박 <br> 1인당 \648,595부터 3일 <br> <img src="../Airbnb이희주/img/star.svg" alt=""
-                  class="star-svg"> 5.0 (13)</p>
+              <p>올 인클루시브 패키지 2박 <br> 1인당 \648,595부터 3일 <br> <img src="img/star.svg" alt="" class="star-svg"> 5.0 (13)
+              </p>
             </div>
             <div class="home-text">인도네시아
-              <p>아름다운 발리의 정글속으로 떠나는 모험 <br> 1인당 \147,673부터 2일<br> <img src="../Airbnb이희주/img/star.svg" alt=""
-                  class="star-svg"> 5.0 (202)</p>
+              <p>아름다운 발리의 정글속으로 떠나는 모험 <br> 1인당 \147,673부터 2일<br> <img src="img/star.svg" alt="" class="star-svg"> 5.0
+                (202)</p>
             </div>
             <div class="home-text">스웨덴
-              <p>스웨덴의 거친 숲속에서 즐기는 캠핑 <br> 1인당 \967,650부터 4일 <br> <img src="../Airbnb이희주/img/star.svg" alt=""
-                  class="star-svg"> 5.0 (2)</p>
+              <p>스웨덴의 거친 숲속에서 즐기는 캠핑 <br> 1인당 \967,650부터 4일 <br> <img src="img/star.svg" alt="" class="star-svg"> 5.0
+                (2)</p>
             </div>
             <div class="home-text">코르카리카
-              <p>블루캐니언의 깊숙한 곳으로 떠나는 탐험 <br> 1인당 \327,669부터 2일 <br> <img src="../Airbnb이희주/img/star.svg" alt=""
-                  class="star-svg"> 5.0 (15)</p>
+              <p>블루캐니언의 깊숙한 곳으로 떠나는 탐험 <br> 1인당 \327,669부터 2일 <br> <img src="img/star.svg" alt="" class="star-svg"> 5.0
+                (15)</p>
             </div>
             <div class="home-text">케냐
-              <p>마사이족 전사와 함께 코끼리 타고 뿌우 <br> 1인당\557,263부터 2일 <br> <img src="../Airbnb이희주/img/star.svg" alt=""
-                  class="star-svg"> 5.0 (202)</p>
+              <p>마사이족 전사와 함께 코끼리 타고 뿌우 <br> 1인당\557,263부터 2일 <br> <img src="img/star.svg" alt="" class="star-svg"> 5.0
+                (202)</p>
             </div>
           </div>
           <br><br><br>
           <h1>전세계 숙소</h1>
           <div class="camp">
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/1.jpg" alt="" width="450px" height="300px"></div>
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/2.webp" alt="" width="450px" height="300px"></div>
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/3.webp" alt="" width="450px" height="300px"></div>
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/4.webp" alt="" width="450px" height="300px"></div>
-            <div class="camp-star"> 네덜란드 <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.5 <br> Charming
+            <div><img src="img/sectionpic/1/camp/1.jpg" alt="" width="450px" height="300px"></div>
+            <div><img src="img/sectionpic/1/camp/2.webp" alt="" width="450px" height="300px"></div>
+            <div><img src="img/sectionpic/1/camp/3.webp" alt="" width="450px" height="300px"></div>
+            <div><img src="img/sectionpic/1/camp/4.webp" alt="" width="450px" height="300px"></div>
+            <div class="camp-star"> 네덜란드 <img src="img/star.svg" class="star-svg" alt=""> 4.5 <br> Charming
               gardenroom with woodstove </div>
-            <div> 포르투칼 <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.5 <br> PORTA33 IPORTO PENTHOUSE
+            <div> 포르투칼 <img src="img/star.svg" class="star-svg" alt=""> 4.5 <br> PORTA33 IPORTO PENTHOUSE
               DUPLEX AT </div>
             <div>스페인
-              <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.7 <br> Cave with garden at sacromonte
+              <img src="img/star.svg" class="star-svg" alt=""> 4.7 <br> Cave with garden at sacromonte
             </div>
-            <div>미국 <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.77 <br> coastal maivne cottage
+            <div>미국 <img src="img/star.svg" class="star-svg" alt=""> 4.77 <br> coastal maivne cottage
             </div>
 
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/5.webp" alt="" width="450px" height="300px"></div>
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/6.jpg" alt="" width="450px" height="300px"></div>
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/7.jpg" alt="" width="450px" height="300px"></div>
-            <div><img src="../Airbnb이희주/img/sectionpic/1/camp/8.webp" alt="" width="450px" height="300px"></div>
-            <div class="camp-star"> 인도네시아 <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.7 <br> private
+            <div><img src="img/sectionpic/1/camp/5.webp" alt="" width="450px" height="300px"></div>
+            <div><img src="img/sectionpic/1/camp/6.jpg" alt="" width="450px" height="300px"></div>
+            <div><img src="img/sectionpic/1/camp/7.jpg" alt="" width="450px" height="300px"></div>
+            <div><img src="img/sectionpic/1/camp/8.webp" alt="" width="450px" height="300px"></div>
+            <div class="camp-star"> 인도네시아 <img src="img/star.svg" class="star-svg" alt=""> 4.7 <br> private
               family love villa4 close to 66 beach bali </div>
-            <div> 포르투칼 <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.92 <br> Case do rio - Beach and
+            <div> 포르투칼 <img src="img/star.svg" class="star-svg" alt=""> 4.92 <br> Case do rio - Beach and
               Mountains </div>
             <div>스페인
-              <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.9 <br> Exqulsito apartamento con espacios
+              <img src="img/star.svg" class="star-svg" alt=""> 4.9 <br> Exqulsito apartamento con espacios
               abiertos y luz </div>
-            <div>그리스 <img src="../Airbnb이희주/img/star.svg" class="star-svg" alt=""> 4.95 <br> Hector cave House </div>
+            <div>그리스 <img src="img/star.svg" class="star-svg" alt=""> 4.95 <br> Hector cave House </div>
 
           </div>
           <br><br><br>
           <h1>다음 여행에 딱맞는 독특한 숙소</h1>
           <div class="camp2">
-            <img src="../Airbnb이희주/img/sectionpic/last/1.jpg" alt="">
-            <img src="../Airbnb이희주/img/sectionpic/last/2.webp" alt="">
-            <img src="../Airbnb이희주/img/sectionpic/last/3.jpg" alt="">
+            <img src="img/sectionpic/last/1.jpg" alt="">
+            <img src="img/sectionpic/last/2.webp" alt="">
+            <img src="img/sectionpic/last/3.jpg" alt="">
 
             <div>트리하우스 1900개 <br>
               <h2>나무위에서 보내는 하룻밤</h2> 세상에서 단 하나뿐인 트리하우스에서 머무르며 여행의 신세계를 경험해 보세요.
@@ -301,9 +282,10 @@
       어떤 섹션 끝 -->
   </main>
   <!-- 서브끝 -->
-  <br><br><br><hr><br><br>
+  <br><br><br>
+  <hr><br><br>
   <footer>
-    <div class="f-1"> 
+    <div class="f-1">
       <h2>에어비엔비</h2><br>
       <div>채용정보</div>
       <div>뉴스</div>
@@ -312,7 +294,7 @@
       <div>접근성</div>
     </div>
 
-    <div class="f-1"> 
+    <div class="f-1">
       <h2>여행하기</h2><br>
       <div>신뢰와 안전</div>
       <div>여행 크리딧</div>
@@ -323,7 +305,7 @@
       <div>한국의 변경된 환불정책</div>
     </div>
 
-    <div class="f-1"> 
+    <div class="f-1">
       <h2>호스팅 하기</h2><br>
       <div>호스팅의 장점</div>
       <div>호스팅의 기준</div>
@@ -333,19 +315,21 @@
       <div>open house 프로그램</div>
     </div>
 
-    <div class="f-1"> 
+    <div class="f-1">
       <h2>도움말</h2><br>
       <div>에어비앤비 이웃 민원 지원</div>
       <div class="newsnews">새소식</div>
     </div>
 
-    
+
   </footer>
   <footer class="foot">
-   
-    <hr><hr><br>
 
-    <p> <img src="../Airbnb이희주/img/airbnb.svg" width="20px" height="20px"> 2020 Airbnb.inc All rights reserved. 이용약관 정보 처리방침.여행지 찾기 <img src="../Airbnb이희주/img/facebook.svg" width="13px" height="13px"> <img src="../Airbnb이희주/img/twiter.svg" width="13px" height="13px"> </p>
+    <hr>
+    <hr><br>
+
+    <p> <img src="img/airbnb.svg" width="20px" height="20px"> 2020 Airbnb.inc All rights reserved. 이용약관 정보 처리방침.여행지 찾기
+      <img src="img/facebook.svg" width="13px" height="13px"> <img src="img/twiter.svg" width="13px" height="13px"> </p>
   </footer>
 
   <script src="main.js"></script>
