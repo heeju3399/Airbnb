@@ -1,0 +1,397 @@
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: cursive, -apple-system, BlinkMacSystemFont;
+}
+
+.main-page {
+  /* display: none; */
+  height: 100%;
+  background-image: url("../Airbnb이희주/img/headmainpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-navi .logo {
+  color: white;
+  margin-right: auto;
+  size: 80%;
+  width: 30%;
+  height: 30%;
+}
+
+.main-navi {
+  padding: 30px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-navi .item > a {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+}
+
+.main-navi .item {
+  margin-left: 30px;
+}
+/* form//form//form//form//form//form//form//form//form// */
+/* form//form//form//form//form//form//form//form//form// */
+.main-form {
+  background-color: white;
+  display: block;
+  background-size: cover;
+  margin-left: 10%;
+  margin-top: 100px;
+  padding: 32px 32px 24px 32px;
+  width: 430px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+.main-form-name {
+  font-size: 40px;
+  font-style: inherit;
+}
+.bottom-text {
+  color: white;
+  border-style: solid 4px black;
+}
+a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+
+.table-loc {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.table-loc-inputtxt {
+  border: solid 1px black;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.table-all-in-out {
+  display: flex;
+  /* border: solid 1px black; */
+  margin-bottom: 30px;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 90%;
+  height: 50px;
+}
+.table-check-in {
+  margin-bottom: 10px;
+}
+
+.table-check-out {
+  margin-bottom: 10px;
+}
+.table-check-in-inputtxt {
+  border: solid 1px black;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+.table-check-out-outputtxt {
+  border: solid 1px black;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 90%;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.table-personnel {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.perbtn {
+  border: solid 1px black;
+  border-radius: 3px;
+  display: flex;
+
+  font-size: 20px;
+  width: 90%;
+  height: 50px;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  text-align: left;
+}
+.person1 {
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.perbtn:hover {
+  cursor: pointer;
+}
+.table-all-in-out:hover {
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  justify-content: flex-end;
+}
+.search1 {
+  margin-top: 10px;
+  background-color: #ff5a5f;
+  color: white;
+  font-size: 30px;
+  width: 90px;
+  height: 70px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.search1:hover {
+  cursor: pointer;
+}
+.bottom-text {
+  /* display: inline-block; */
+  color: black;
+  background-color: white;
+  font-size: 20px;
+  display: block;
+  background-size: contain;
+  margin-left: 10%;
+  margin-top: 1%;
+
+  padding: 32px 32px 24px 32px;
+  width: 430px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+.bottom-text-a {
+  color: black;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+/* form//form//form//form//form//form//form//form//form// */
+/* form//form//form//form//form//form//form//form//form// */
+
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+/* MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML//MAIN-HTML */
+
+/* SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START//SUB-START// */
+
+.wrapper > .home {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  height: 70%;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 20px;
+}
+.wrapper > .home:hover {
+  cursor: pointer;
+}
+
+h1 {
+  margin: 50px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.home-text {
+  margin-top: 30px;
+  font-size: 40px;
+  height: 40px;
+  width: 100%;
+  margin-right: auto;
+  /* width: auto; */
+}
+.home-text p {
+  font-size: 20px;
+}
+
+h3 {
+  margin-left: 60px;
+}
+
+.star-svg {
+  width: 10px;
+  height: 10px;
+}
+
+.bbb {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-row: 2fr 2fr;
+  height: 70%;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 20px;
+}
+
+.bbb:hover {
+  cursor: pointer;
+}
+
+.introduction {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+  height: 70%;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 20px;
+}
+.introduction:hover {
+  cursor: pointer;
+}
+.camp {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  height: 70%;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 20px;
+  /* width: 100%;
+  height: 100%; */
+}
+.camp:hover {
+  cursor: pointer;
+}
+.camp2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  height: 70%;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-left: 20px;
+}
+.camp2:hover {
+  cursor: pointer;
+}
+footer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-size: 20px;
+}
+footer:hover {
+  cursor: pointer;
+}
+.f-1 {
+  display: block;
+  margin-left: auto;
+}
+.newsnews {
+  background-color: green;
+  color: white;
+}
+.foot {
+  display: block;
+  /* text-align: left; */
+  font-size: 20px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\로그인및 회원가입 폼\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+* {
+  box-sizing: border-box;
+}
+.text_input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.btnlogin:hover {
+  cursor: pointer;
+}
+.btnlogin > a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+.loginbutton {
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.container {
+  padding: 10px 16px;
+  max-width: auto;
+}
+.loginformmaintxt {
+  text-align: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #474e5d;
+}
+.modal-content {
+  background-color: #fefefe;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  border: 1px solid #888;
+  width: 30%;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.close {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  border: black 3px;
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+/* =============회원가입=========== */
+.container_Signup {
+  display: block;
+  border: 1px solid black;
+  padding: 10px 16px;
+  max-width: 100%;
+}
+.Signup_Btn {
+  display: block;
+  border: solid 5px black;
+}

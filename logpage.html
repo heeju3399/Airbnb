@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .text_input {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      button {
+        background-color: red;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      .container {
+        padding: 10px 16px;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #474e5d;
+      }
+      .modal-content {
+        background-color: #fefefe;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        border: 1px solid #888;
+        width: 30%;
+      }
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+      .close {
+        float: right;
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+      }
+      .close:hover,
+      .close:focus {
+        color: #f44336;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>로그인 폼</h2>
+    <button onclick="openLogin();" style="width: auto;">로그인</button>
+
+    <div id="login" class="modal">
+      <form class="modal-content">
+        <div class="container">
+          <span onclick="closeLogin();" class="close"> &times; </span>
+          <h3>로그인</h3>
+          <p>아이디와 비밀번호를 입력해 주세요.</p>
+          <hr />
+
+          <input type="text" class="text_input" placeholder="Enter Password" />
+
+          <label>
+            <input
+              type="checkbox"
+              checked="checked"
+              style="margin-bottom: 15px"
+            />
+          </label>
+          <div>
+            <button type="submit" class="loginbtn">로그인</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+      var login = document.getElementById("login");
+      function openLogin() {
+        login.style.display = "block";
+      }
+      function closeLogin() {
+        login.style.display = "none";
+      }
+      window.onclick ==
+        function(event) {
+          if (event.target == login) {
+            login.style.display = "none";
+          }
+        };
+    </script>
+  </body>
+</html>
